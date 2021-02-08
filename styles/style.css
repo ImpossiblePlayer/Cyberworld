@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 2px solid #fffb00;
+}
+
+body {
+    font-family: Verdana;
+    color: #222222;
+    font-size: 14px;
+}
+
+a,
+a:hover,
+a:visited
+{
+    text-decoration: none;
+    color: #222
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+/* this is used for blocks with this colour / используется для блоков с данным цветом */
+.gray {
+    background-color: #1f1f1f;
+}
+
+header {
+    background: url();
+}
+
+
+
+.pc img {
+    width: auto;
+}
+
+.pc span {
+    font: bold 20px "comic sans ms";
+    margin-left: 20px;
+}
+
+.devices {
+    max-height: 800px;
+    min-height: auto;
+    background: url(../backgrounds/border.png) no-repeat top;
+}
+
+.device-vip,
+.device-common
+{
+    color: #00ff00;
+    outline: 4px solid #00ff00;
+    border-radius: 10px;
+    margin: 40px;
+}
+
+.info {
+
+}
+
+form div {
+    display: block;
+}
+
+.map {
+    padding: 0 !important;
+}
+
+.feedback input {
+    height: 40px;
+    width: 150px;
+    padding-left: 10px;
+    background: #cdcdcd;
+    border-radius: 35px;
+    margin: 20px 10px;
+    border: none;
+}
+
+.feedback textarea {
+    min-height: 150px;
+    min-width: 300px;
+    max-width: 500px;
+    background: #cdcdcd;
+    border-radius: 10px;
+    padding: 10px 0 0 10px;
+    margin: 10px;
+    border: none;
+}
+
+.feedback button {
+    height: 50px;
+    width: 200px;
+    font: "Courier New";
+    background-color: #00ffbf;
+    border-radius: 35px;
+    margin: 10px;
+    border: none;
+}
