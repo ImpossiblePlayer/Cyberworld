@@ -1,52 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
     outline: 2px solid #fffb00;
 }
 
 body {
-    font-family: Verdana;
+    font: 16px;
     color: #222222;
-    font-size: 14px;
 }
 
 a,
-a:hover,
 a:visited
 {
     text-decoration: none;
-    color: #222
+    color: #c4c4c4
+}
+
+a:hover {
+    color: #00ff9d;
 }
 
 ul,
 ol {
     list-style-type: none;
+    padding-left: 0;
 }
 
-/* this is used for blocks with this colour / используется для блоков с данным цветом */
-.gray {
+/* Used for blocks to give them theese background colors/ Используется для блоков, чтобы задать им данные цвета фона */
+.gray-bg {
     background-color: #1f1f1f;
 }
 
+
+/* Header styles / Стили хэдера */
 header {
-    background: url();
+    position: sticky;
+    top: 0;
+    background: #030303;
+}
+
+header a {
+    margin: 0 10px;
+}
+
+.nav .nav a:hover,
+.nav .nav a:active {
+    border-radius: 15px;
+    background-color: #797979;
+}
+
+.dropdown-item {
+    border-radius: 15px;
+}
+
+.dropdown-item:hover,
+.dropdown-item:active {
+    background-color: #d3d3d3;
+    color: #000000;
+    width: auto;
 }
 
 
+/* Description styles / Стили описания */
+.descr {
+    background: url(../backgrounds/description-bg\ —\ копия.png) 0px -250px fixed;
+    background-size: cover;
+    height: 400px;
+}
 
+.descr h1,
+.descr h3,
+.descr a {
+    color: #9900ff;
+    font-family: "Jura";
+    font-weight: 300;
+}
+
+.descr a:hover, 
+.descr a:active {
+    color: #00ff00;
+}
+
+/* Gaming places' description styles / Стили описания игровых мест */
 .pc img {
     width: auto;
 }
 
-.pc span {
-    font: bold 20px "comic sans ms";
-    margin-left: 20px;
+.devices {
+    height: auto;
+    padding: 40px;
+    background: url(../backgrounds/border.png) no-repeat top;
+    background-size: 100% 100%;
+    font: 20px "Jura";
 }
 
-.devices {
-    max-height: 800px;
-    min-height: auto;
-    background: url(../backgrounds/border.png) no-repeat top;
+.devices span {
+    margin: 0 0 20px 20px;
 }
 
 .device-vip,
@@ -54,27 +104,29 @@ header {
 {
     color: #00ff00;
     outline: 4px solid #00ff00;
-    border-radius: 10px;
-    margin: 40px;
+    padding: 10px 20px;
+    margin: 20px;
 }
 
-.info {
 
-}
+/* Feedback styles / Стили обратной связи */
 
-form div {
-    display: block;
-}
-
+/* Google maps */
 .map {
-    padding: 0 !important;
+    padding: 0;
 }
 
+.map iframe {
+    height: 600px;
+    width: 600px;
+}
+
+/* Form / Форма */
 .feedback input {
     height: 40px;
     width: 150px;
     padding-left: 10px;
-    background: #cdcdcd;
+    background: #c4c4c4;
     border-radius: 35px;
     margin: 20px 10px;
     border: none;
@@ -82,9 +134,9 @@ form div {
 
 .feedback textarea {
     min-height: 150px;
-    min-width: 300px;
-    max-width: 500px;
-    background: #cdcdcd;
+    max-height: 400px;
+    width: 95%;
+    background: #c4c4c4;
     border-radius: 10px;
     padding: 10px 0 0 10px;
     margin: 10px;
@@ -94,7 +146,7 @@ form div {
 .feedback button {
     height: 50px;
     width: 200px;
-    font: "Courier New";
+    font: "Jura";
     background-color: #00ffbf;
     border-radius: 35px;
     margin: 10px;
