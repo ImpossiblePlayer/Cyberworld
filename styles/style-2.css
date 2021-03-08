@@ -1,0 +1,261 @@
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/comfortaa/v30/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4WjMPrQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jura/v16/z7NOdRfiaC4Vd8hhoPzfb5vBTP1d7auh.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v4/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FO_F.ttf) format('truetype');
+}
+body {
+  font: 16px;
+  color: #222222;
+}
+a,
+a:visited {
+  text-decoration: none;
+  color: #c4c4c4;
+}
+a:hover {
+  color: #00ff9d;
+}
+ul,
+ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+/* Used for blocks to give them theese background colors/ Используется для блоков, чтобы задать им данные цвета фона */
+.gray-bg {
+  background-color: #201e1e;
+}
+/* Header / Хэдер */
+header {
+  position: sticky;
+  top: 0;
+  background: #030303;
+  opacity: 0.85;
+  z-index: 1;
+}
+header a {
+  margin: 0 10px;
+}
+.nav .nav > a:hover,
+.nav .nav > a:active {
+  color: #bbbbbb;
+  border-radius: 15px;
+  background-color: #313131;
+}
+.dropdown-menu li {
+  /* Bootstrap class */
+  border-radius: 15px;
+}
+.dropdown-menu .dropdown-item {
+  /* Bootstrap class */
+  color: #000000;
+}
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:active {
+  background-color: #d3d3d3;
+  width: auto;
+}
+/* Description / Описание */
+.descr {
+  background-color: #c4c4c4;
+  height: 350px;
+}
+.descr .row {
+  margin: auto;
+}
+.descr a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.descr h1,
+.descr h3,
+.descr a {
+  color: #000;
+  font-family: "Jura";
+  font-weight: 300;
+}
+/* Icons of services / Иконки сервиса */
+.stats {
+  background-color: #222222;
+  font-family: "Manrope";
+  color: #c4c4c4;
+  padding: 20px;
+}
+.stats div[class|="col"] {
+  text-align: center;
+}
+.stats div[class|="col"] label {
+  display: block;
+}
+/* Photos of the club / Фото клуба */
+.gallery {
+  font-family: "Jura";
+  background-color: #cacaca;
+  padding: 20px;
+}
+.gallery img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.gallery .col-4 {
+  margin-top: 20px;
+}
+.gallery .col-4:first-child {
+  padding-left: 0;
+}
+.gallery .col-4:last-child {
+  padding-right: 0;
+}
+/* Gaming space / Игровые места */
+.pc img {
+  width: auto;
+}
+.devices {
+  height: auto;
+  padding: 40px;
+  background: url(../backgrounds/border.png) no-repeat top;
+  background-size: 100% 100%;
+  font: 20px "Jura";
+  color: #f5f5f5;
+}
+.devices h2 {
+  width: auto;
+}
+.devices-list {
+  margin: 20px;
+  padding: 20px 20px 0px;
+  border: 1px solid #00ff00;
+  border-radius: 5px;
+  padding: 10px;
+}
+.devices .vip {
+  border-color: #be1e2d;
+}
+/* Price list / Прайслист */
+.price {
+  height: 600px;
+  background: url(../backgrounds/price-bg.jpg) no-repeat fixed;
+  background-size: cover;
+  font: 20px "Comfortaa";
+  color: #00ff00;
+  text-align: center;
+}
+.price h1 {
+  margin: 20px;
+}
+.price tr {
+  width: 100%;
+  height: 60px;
+  border-top: 4px solid #ececec;
+  border-bottom: 4px solid #ececec;
+}
+/* News / Новости */
+.news {
+  background-color: #f2f3f6;
+  font-family: "Manrope";
+}
+.news .row {
+  padding: 20px;
+}
+.news h1 {
+  text-align: center;
+}
+.news img {
+  height: auto;
+  width: 100%;
+}
+.news .btn {
+  border: 2px solid #be1e2d;
+  border-radius: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #000;
+  width: auto;
+}
+.news .btn:hover,
+.news .btn:active {
+  background: #1f1f1f;
+  color: #c4c4c4;
+}
+/* Contacts / Контакты */
+.info {
+  height: 650px;
+  padding: 40px;
+  background: url(../backgrounds/map-bg.jpg) no-repeat top;
+  background-size: cover;
+  font-family: "Jura";
+  color: #f5f5f5;
+}
+.info h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #ff0037;
+}
+.info span {
+  font-size: 20px;
+}
+.info p {
+  font-size: 24px;
+}
+.info a {
+  display: block;
+}
+.info .contacts p {
+  display: block;
+}
+.info iframe {
+  /* Google maps */
+  height: 450px;
+  width: 100%;
+  border-radius: 5px;
+}
+/* Footer */
+/* Feedback form / Форма Обратной связи */
+/*.feedback {
+	input {
+		height: 40px;
+		width: 150px;
+		padding-left: 10px;
+		background: #c4c4c4;
+		border-radius: 35px;
+		margin: 20px 10px;
+		border: none;
+	}
+
+	textarea {
+		min-height: 150px;
+		max-height: 400px;
+		width: 95%;
+		background: #c4c4c4;
+		border-radius: 10px;
+		padding: 10px 0 0 10px;
+		margin-top: 10px;
+		border: none;
+	}
+
+	button {
+		height: 50px;
+		width: 200px;
+		font: "Jura";
+		background-color: #00ffbf;
+		border-radius: 35px;
+		margin: 10px;
+		border: none;
+	}
+}*/

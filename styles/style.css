@@ -33,56 +33,98 @@ ol {
 }
 
 
-/* Header styles / Стили хэдера */
+/* Header / Хэдер */
 header {
     position: sticky;
     top: 0;
     background: #030303;
+    opacity: 0.8;
 }
 
 header a {
     margin: 0 10px;
 }
 
-.nav .nav a:hover,
+.nav .nav a:hover, /* Bootstrap classes */
 .nav .nav a:active {
+    color: #bbbbbb;
     border-radius: 15px;
-    background-color: #797979;
+    background-color: #313131;
 }
 
-.dropdown-item {
+.dropdown-menu li { /* Bootstrap classes */
     border-radius: 15px;
 }
 
-.dropdown-item:hover,
-.dropdown-item:active {
+.dropdown-item:hover, /* Bootstrap classes */
+.dropdown-item:active { 
     background-color: #d3d3d3;
     color: #000000;
     width: auto;
 }
 
 
-/* Description styles / Стили описания */
+/* Description / Описания */
 .descr {
-    background: url(../backgrounds/description-bg\ —\ копия.png) 0px -250px fixed;
-    background-size: cover;
-    height: 400px;
+    background-color: #c4c4c4;
+    height: 350px;
+}
+
+.descr .row {
+    margin: auto;
+}
+
+.descr a {
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .descr h1,
 .descr h3,
 .descr a {
-    color: #9900ff;
+    color: #000;
     font-family: "Jura";
     font-weight: 300;
 }
 
-.descr a:hover, 
-.descr a:active {
-    color: #00ff00;
+/* Photos of the club / Фото клуба */
+.gallery {
+    background-color: #fff;
+    
 }
 
-/* Gaming places' description styles / Стили описания игровых мест */
+.photo {
+    padding: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Pricelist / Прайслист */
+.price {
+    height: 600px;
+    background: url(../backgrounds/price-bg.png) no-repeat fixed;
+    background-size: cover;
+    font: 20px "Comfortaa";
+    color: #00ff00;
+    text-align: center;
+}
+
+.price h1 {
+    margin: 20px;
+}
+
+.price tr {
+    width: 100%;
+    height: 60px;
+    border-top: 4px solid #ececec;
+    border-bottom: 4px solid #ececec;
+}
+
+/* Gaming spaces / Игровые места */
 .pc img {
     width: auto;
 }
@@ -99,26 +141,38 @@ header a {
     margin: 0 0 20px 20px;
 }
 
-.device-vip,
-.device-common
+.devices fieldset {
+    outline: 4px solid #00ff00;
+}
+
+.devices-vip,
+.devices-common
 {
     color: #00ff00;
-    outline: 4px solid #00ff00;
     padding: 10px 20px;
     margin: 20px;
 }
 
-
-/* Feedback styles / Стили обратной связи */
+/* Feedback / Обратная связь */
 
 /* Google maps */
-.map {
-    padding: 0;
+.info {
+    height: 600px;
+    padding: 40px;
+    background: url(../backgrounds/map-bg.png) no-repeat top;
+    background-size: 100% 100%;
+    font-family: "Jura";
+    color: #f7476d;
 }
 
-.map iframe {
-    height: 600px;
-    width: 600px;
+.info h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.info iframe {
+    height: 450px;
+    width: 100%;
 }
 
 /* Form / Форма */
@@ -139,7 +193,7 @@ header a {
     background: #c4c4c4;
     border-radius: 10px;
     padding: 10px 0 0 10px;
-    margin: 10px;
+    margin-top: 10px;
     border: none;
 }
 

@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Cyber world</title>
 		<!-- Bootstrap 4-->
 		<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
 		
@@ -8,14 +11,14 @@
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 		
 		<link rel="shortcut icon" href="favicon.png" type="image/png">
-		<link rel="stylesheet" href="styles/style.css">
-
-		<meta charset="UTF-8">
-		<title>Cyber world</title>
+		<link rel="stylesheet" href="styles/style-2.css"> <!-- Compiled LESS / Скомпилированный LESS -->
 	</head>
 	<body>
 		<!-- Header only for big displays / Хэдер только для болльших дисплеев -->
-		<header class="nav justify-content-around align-items-lg-center">
+		<header class="nav justify-content-between justify-content-lg-around align-items-center">
+			<nav class="nav-item d-flex d-lg-none">
+				<a href="#"><img src="img/hamburger.png" alt="" height="50"></a>
+			</nav>
 			<!-- Logo/Лого -->
 			<nav class="nav-item">
 				<a href="index.html"><img src="img/logo2.png" alt="logo" height="50" width="100"></a>
@@ -41,95 +44,287 @@
 						</li>
 					</ul>
 				</li>
-				<li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
-				<li class="nav-item"><a href="#" class="nav-link">Новости</a></li>
-				<li class="nav-item"><a class="nav-link" title="Контактный номер">+7(___)___-__-__</a></li>
+				<li class="nav-item">
+					<a href="#contacts" class="nav-link">Контакты</a>
+				</li>
+				<li class="nav-item">
+					<a href="news-page/news.html" class="nav-link">Новости</a>
+				</li>
+				<li class="nav-item">
+					<a href="tel:+7" class="nav-link" title="Контактный номер">+7(___)___ __ __</a>
+				</li>
 			</ul>
-			<nav class="nav-item d-none d-lg-flex">
-				<a href="#" class="nav-link">Войти</a>
+			<nav class="nav-item">
+				<a href="sign-in-page/sign-in.html" class="nav-link">Войти</a>
 			</nav>
 		</header>
 
-		<!-- Header for mobiles / Хэдер для мобильных устройтсв -->
-		<!-- <header>
-			<img src="img/gamgubger.png" alt="Меню">
-		</header> -->
-
 		<!-- Main content / Основной контент -->
-		<section class="descr container-fluid">
+
+		<!-- introduction / Начало -->
+		<section class="descr container-fluid d-flex align-items-center">
 			<div class="row justify-content-center">
-				<div class="col-6">
-					<h1><a href="index.html">Cyber World</a> - это</h1>
+				<div class="col-7">
+					<h1><a href="index.html">Cyber World</a></h1>
 					<h3>
-						невероятный опыт и уникальное пространство для игры и отдыха.
+						это невероятный опыт и уникальное пространство для игры и отдыха.
 					</h3>
 				</div>
 			</div>	
 		</section>
 
-		<!-- Our gaming stations / Наши Игровые станции -->
-		<section></section>
+		<section class="gallery container-fluid">
+			<div class="row justify-content-center">
+				<h1 class="col-lg-8">Представляем Cyber World</h1>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col col-lg-8">
+					<img src="img/gallery/photo-1.jpg">
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col col-lg-8 row">
+					<div class="col-4"><img src="img/gallery/photo-5.jpg"></div>
+					<div class="col-4"><img src="img/gallery/photo-3.jpg"></div>
+					<div class="col-4"><img src="img/gallery/photo-6.jpg"></div>
+				</div>
+			</div>
+		</section>
 
-		<!-- Our PCs / Наши ПК -->
+		<!-- Our stats / Наши услуги  -->
+		<section class="stats container-fluid">
+			<div class="row justify-content-center">
+				<div class="col-sm-4 col-lg-2"> <!-- First column / Первая колонна -->
+					<img src="img/stats/pc.svg" id="pc" alt="ПК" width="60">
+					<label for="pc">
+						<h2>40</h2>
+						компьютеров
+					</label>
+				</div>
+				<div class="col-sm-4 col-lg-2"> <!-- Second column / Вторая колонна -->
+					<img src="img/stats/crown.svg" id="vip" alt="Vip комнаты" width="60">
+					<label for="vip">
+						<h2>2</h2>
+						VIP комнаты по 5 ПК
+					</label>
+				</div>
+				<div class="col-sm-4 col-lg-2"> <!-- Third column / Третья колонна -->
+					<img src="img/stats/ps.png" id="ps" alt="Консоли" width="60">
+					<label for="ps">
+						<h2>4</h2>
+						PS5 консоли
+					</label>
+				</div>
+			</div>
+		</section>
+
+		<!-- Our devices / Наше оборудование -->
 		<section class="pc container-fluid">
 			<div class="gray-bg row justify-content-center">
-				<img src="img/charact7.gif" width="590" height="100" alt="Характеристики">
+				<img src="img/charact7.gif" width="590" height="120" alt="Характеристики">
 			</div>
 			<div class="devices row justify-content-evenly align-items-center">
-				<div class="device-common col-md-6 col-lg-3">
+				<div class="devices-list col-9 col-lg-3">
 					<h2>Standart</h2>
-					<ul>	
+					<ul> <!-- First column / Первая колонна -->	
 						<li>i5 9400F</li>
 						<li>GTX 1660 super</li>
 						<li>2x8 gb corsair 2600MHz</li>
 						<li>Logitech g102</li>
-						<li>Logitech ...</li>
+						<li>Logitech g213</li>
 						<li>24" Full HD 144Hz</li>
 					</ul>
 				</div>
-				<div class="device-vip col-md-6 col-lg-3">
+				<div class="devices-list vip col-9 col-lg-3">
 					<h2>VIP</h2>
-					<ul>
+					<ul> <!-- Second column / Вторая колонна -->
 						<li>i7 9700</li>
 						<li>RTX 2070</li>
 						<li>2x8 gb corsair 2600MHz</li>
 						<li>Logitech g302</li>
-						<li>Logitech ...</li>
+						<li>Logitech g413</li>
 						<li>24" Full HD 240Hz</li>
 					</ul>
 				</div>
 			</div>
 		</section>
+
+		<section class="price container-fluid">
+			<div class="row justify-content-center">
+				<table class="col-lg-6">
+					<h1>Прайс-лист</h1>
+					<tr>
+						<td>Пакет 1 часа (ПН-ЧТ)</td>
+						<td>Общий зал</td>
+						<td>VIP</td>
+					</tr>
+					<tr>
+						<td>Пакет 1 часа (ПТ-ВС)</td>
+						<td>Общий зал</td>
+						<td>VIP</td>
+					</tr>
+					<tr>
+						<td>Пакет 2 часов (ПН-ЧТ)</td>
+						<td>Общий зал</td>
+						<td>VIP</td>
+					</tr>
+					<tr>
+						<td>Пакет 2 часов (ПТ-ВС)</td>
+						<td>Общий зал</td>
+						<td>VIP</td>
+					</tr>
+					<tr>
+						<td>Пакет 5 часов (ПН-ЧТ)</td>
+						<td>Общий зал</td>
+						<td>VIP</td>
+					</tr>
+					<tr>
+						<td>Пакет 5 часов (ПТ-ВС)</td>
+						<td>Общий зал</td>
+						<td>VIP</td>
+					</tr>
+					<tr>
+						<td>Пакет "Ночь"</td>
+						<td>Общий зал</td>
+						<td>VIP</td>
+					</tr>
+				</table>
+			</div>
+		</section>
 		
-		<!-- Contacts/Контакты -->
-		<section class="info gray-bg container-fluid">
-			<div class="row justify-content-lg-around justify-content-md-center">
-				<div class="map col-md-10 col-lg-4 justify-content-center">
-					<!-- Google map / Google карта -->
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19886.174600008228!2d58.42265382007159!3d51.46234565421899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x417fe01b92f7e621%3A0x3e3c507c839551f4!2z0JDQstGC0L7QstC-0LrQt9Cw0Ls!5e0!3m2!1sru!2sru!4v1612023084017!5m2!1sru!2sru" frameborder="0"allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-				</div>
-				<form class="feedback col-md-10 col-lg-4" action="#">
+
+		<!-- News block -->
+		<section class="news container-fluid">
+			<div class="row justify-content-center">
+				<h1 class="news-header col-lg-2">Новости</h1>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-6 card">
 					<div class="row">
-						<input type="text" name="initials" placeholder="ФИО">
-						<input type="text" name="email" placeholder="E-mail">
-						<input type="text" name="phone-number" placeholder="+7(___)___-__-__">
+						<div class="col-lg-4">
+							<img src="img/price-man.png" alt="">
+						</div>
+						<div class="col-lg-8">
+							<div class="card-body">
+								<h2 class="card-title">
+									Партнерство с Cyber Shoke
+								</h2>
+								<p class="card-text">
+									<span>20.02</span><br>
+									Cyber Shoke - Крыпнейшая сеть серверов в СНГ...
+								</p>
+								<a href="error-404/error-404.html" class="btn">Подробнее</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-6 card">
+					<div class="row">
+						<div class="col-lg-4">
+							<img src="img/price-man.png" alt="">
+						</div>
+						<div class="col-lg-8">
+							<div class="card-body">
+								<h2 class="card-title">
+									Создание сайта
+								</h2>
+								<p class="card-text">
+									<span>20.02</span><br>
+									У вашего любимого клуба теперь есть сайт.
+								</p>
+								<a href="error-404/error-404.html" class="btn">Подробнее</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-lg-6 card">
+					<div class="row">
+						<div class="col-lg-4">
+							<img src="img/price-man.png" alt="">
+						</div>
+						<div class="col-lg-8">
+							<div class="card-body">
+								<h2 class="card-title">
+									Открытие клуба в Оренбурге
+								</h2>
+								<p class="card-text">
+									<span>20.02</span><br>
+									Оренбург - новый город, который мы освоиили.
+								</p>
+								<a href="error-404/error-404.html" class="btn">Подробнее</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<a class="col-lg-2 btn" href="news-page/news.html">Все новости</a>
+			</div>
+		</section>
+		
+		
+		<!-- Contacts block / Контакты -->
+		<section class="info container-fluid" id="contacts">
+			<div class="row justify-content-center align-items-center">
+				<h1 class="col-lg-3">Контакты</h1>
+			</div>
+			<div class="row justify-content-evenly">
+				<div class="col-lg-7">
+					<!-- Google map / Google карта -->
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d734.0403927251984!2d55.09683804309183!3d51.76946568777453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x417bf0e814872729%3A0xdab92a8272514852!2z0J7QntCU0KLQlNCcINC40LwuINCSLtCfLtCf0L7Qu9GP0L3QuNGH0LrQvg!5e0!3m2!1sru!2sru!4v1614531093273!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy"></iframe>				</div>
+				<div class="col-lg-3">
+					<h1>Сyber World Оренбург</h1>
+					<div class="row">
+						<span>Адрес клуба:</span>
+						<p>Ул. Советская, 41</p>
+					</div>
+					<div class="contacts">
+						<span>Звоните и пишите:</span>
+						<div class="d-lg-flex justify-content-lg-between">
+							<p>+7(___)___ __ __</p>
+							<p>Cyber-world@___.___</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- <div class="feedback container-fluid"> Feedback form / Форма обратной связи
+			<div class="row">
+				<form class="col-lg-8">
+					<div class="row">
+						<input class="col-lg-3" type="text" name="initials" placeholder="ФИО">
+						<input class="col-lg-3" type="text" name="email" placeholder="E-mail">
+						<input class="col-lg-3" type="text" name="phone-number" placeholder="+7(___)___-__-__">
 					</div>
 					<div class="row">
-						<textarea name="message" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
+						<textarea type="text" name="message" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
 					</div>
 					<div class="row">
 						<button>Отправить</button>
 					</div>
 				</form>
 			</div>
-		</section>
+		</div> -->
 
-		<!-- footer -->
+		<!-- Footer -->
 		<footer class="gray-bg container-fluid">
-			
+			<div class="row">
+				<div class="col"></div>
+				<div class="col"></div>
+				<div class="col"></div>
+				<div class="col"></div>
+			</div>
 		</footer>
 
-		<!-- Bootstrap scripts -->
+		<!-- Scripts -->
+		<!-- <script src="scripts/script.js"></script> -->
+
+		<!-- Bootstrap scripts
+		(Used for dropdown menu / Используется для выпадающего меню) -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
 		<!-- VK Widget -->

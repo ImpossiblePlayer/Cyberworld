@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Error</title>
+
+		<!-- Bootstrap 5 -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+		<style>
+			* {
+				outline: 1px solid #ffffff;
+			}
+
+			body {
+				margin: 0; /* Removes Bootstrap's margin / Убирает марджин от Bootstrap */
+				font: 16px Verdana;
+				color: #c4c4c4;
+				height: 100vh; /* Body element's height = screen's height
+								Высота элемента Body равна высоте экрана */
+				background: #000 url('error.gif') no-repeat center;
+				background-size: contain;
+			}
+
+			.message {
+				height: 500px;
+				width: 1000px;
+				text-align: center;
+			}
+
+			a,
+			a:hover,
+			a:active {
+				color: inherit;
+				border: 2px solid #be1e2d;
+				border-radius: 20px;
+				padding: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container align-items-center">
+			<div class="message row justify-content-center align-items-end">
+				<p class="col">Ой, кажется, эта страница еще не готова</p>
+			</div>
+			<div class="row justify-content-center">
+				<a class="col-2" href="../index.html">На главную</a>
+			</div>
+		</div>
+	</body>
+</html>

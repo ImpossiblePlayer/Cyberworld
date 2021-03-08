@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'Comfortaa';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/comfortaa/v30/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4WjMPrQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jura/v16/z7NOdRfiaC4Vd8hhoPzfb5vBTP1d7auh.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v4/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk79FO_F.ttf) format('truetype');
+}
+* {
+  outline: 2px solid red;
+}
+body {
+  background-color: #1f1f1f;
+  color: #1f1f1f;
+  font-family: "Comfortaa";
+}
+a,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+.container {
+  background-color: #f2f3f6;
+}
+.container h1 {
+  text-align: center;
+  color: #c4c4c4;
+}
+.container input {
+  width: 300px;
+  border-radius: 15px;
+}
+.choose {
+  margin: 20px 0;
+  border: 2px solid #be1e2d;
+  border-radius: 10px;
+}
