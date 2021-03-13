@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura&display=swap');
+
+* {
+    outline: 2px solid #fffb00;
+}
+
+body {
+    font: 16px;
+    color: #222222;
+}
+
+a,
+a:visited
+{
+    text-decoration: none;
+    color: #c4c4c4
+}
+
+a:hover {
+    color: #00ff9d;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Used for blocks to give them theese background colors/ Используется для блоков, чтобы задать им данные цвета фона */
+.gray-bg {
+    background-color: #1f1f1f;
+}
+
+
+/* Header / Хэдер */
+header {
+    position: sticky;
+    top: 0;
+    background: #030303;
+    opacity: 0.8;
+}
+
+header a {
+    margin: 0 10px;
+}
+
+.nav .nav a:hover, /* Bootstrap classes */
+.nav .nav a:active {
+    color: #bbbbbb;
+    border-radius: 15px;
+    background-color: #313131;
+}
+
+.dropdown-menu li { /* Bootstrap classes */
+    border-radius: 15px;
+}
+
+.dropdown-item:hover, /* Bootstrap classes */
+.dropdown-item:active { 
+    background-color: #d3d3d3;
+    color: #000000;
+    width: auto;
+}
+
+
+/* Description / Описания */
+.descr {
+    background-color: #c4c4c4;
+    height: 350px;
+}
+
+.descr .row {
+    margin: auto;
+}
+
+.descr a {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.descr h1,
+.descr h3,
+.descr a {
+    color: #000;
+    font-family: "Jura";
+    font-weight: 300;
+}
+
+/* Photos of the club / Фото клуба */
+.gallery {
+    background-color: #fff;
+    
+}
+
+.photo {
+    padding: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Pricelist / Прайслист */
+.price {
+    height: 600px;
+    background: url(../backgrounds/price-bg.png) no-repeat fixed;
+    background-size: cover;
+    font: 20px "Comfortaa";
+    color: #00ff00;
+    text-align: center;
+}
+
+.price h1 {
+    margin: 20px;
+}
+
+.price tr {
+    width: 100%;
+    height: 60px;
+    border-top: 4px solid #ececec;
+    border-bottom: 4px solid #ececec;
+}
+
+/* Gaming spaces / Игровые места */
+.pc img {
+    width: auto;
+}
+
+.devices {
+    height: auto;
+    padding: 40px;
+    background: url(../backgrounds/border.png) no-repeat top;
+    background-size: 100% 100%;
+    font: 20px "Jura";
+}
+
+.devices span {
+    margin: 0 0 20px 20px;
+}
+
+.devices fieldset {
+    outline: 4px solid #00ff00;
+}
+
+.devices-vip,
+.devices-common
+{
+    color: #00ff00;
+    padding: 10px 20px;
+    margin: 20px;
+}
+
+/* Feedback / Обратная связь */
+
+/* Google maps */
+.info {
+    height: 600px;
+    padding: 40px;
+    background: url(../backgrounds/map-bg.png) no-repeat top;
+    background-size: 100% 100%;
+    font-family: "Jura";
+    color: #f7476d;
+}
+
+.info h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.info iframe {
+    height: 450px;
+    width: 100%;
+}
+
+/* Form / Форма */
+.feedback input {
+    height: 40px;
+    width: 150px;
+    padding-left: 10px;
+    background: #c4c4c4;
+    border-radius: 35px;
+    margin: 20px 10px;
+    border: none;
+}
+
+.feedback textarea {
+    min-height: 150px;
+    max-height: 400px;
+    width: 95%;
+    background: #c4c4c4;
+    border-radius: 10px;
+    padding: 10px 0 0 10px;
+    margin-top: 10px;
+    border: none;
+}
+
+.feedback button {
+    height: 50px;
+    width: 200px;
+    font: "Jura";
+    background-color: #00ffbf;
+    border-radius: 35px;
+    margin: 10px;
+    border: none;
+}
