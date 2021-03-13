@@ -107,7 +107,7 @@ header a {
 }
 /* Icons of services / Иконки сервиса */
 .stats {
-  background-color: #222222;
+  background-color: #181818;
   font-family: "Manrope";
   color: #c4c4c4;
   padding: 20px;
@@ -153,7 +153,7 @@ header a {
   margin: 20px;
 }
 .price tr {
-  width: 100%;
+  width: fit-content;
   height: 60px;
   border-top: 4px solid #ececec;
   border-bottom: 4px solid #ececec;
@@ -231,13 +231,54 @@ header a {
 }
 /* Footer */
 footer {
-  font-size: 20px;
-  color: #464646;
+  color: #d4d4d4;
+}
+footer h5 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+footer .contacts a {
+  margin: 0 10px;
+}
+footer .contacts h5 {
+  text-decoration: underline;
+  font-family: "Jura";
+  font-weight: 500;
+}
+footer .contacts div {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 footer a,
 footer a:hover,
 footer a:active {
   color: inherit;
+}
+footer form input,
+footer form textarea,
+footer form button {
+  color: inherit;
+  border: none;
+  border-radius: 25px;
+  background-color: #2e2e2e;
+}
+footer form input,
+footer form textarea {
+  width: 250px;
+  height: 55px;
+  padding: 15px 20px;
+  margin: 10px 20px 10px 0;
+}
+footer form button {
+  width: 150px;
+  height: 50px;
+  border: 2px solid #be1e2d;
+  color: inherit;
+  margin: 20px 0;
+}
+.copyright {
+  margin-top: 10px;
+  text-align: center;
 }
 /* Feedback form / Форма Обратной связи */
 /*.feedback {

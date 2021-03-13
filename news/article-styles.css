@@ -7,8 +7,22 @@ body {
 	color: #222222;
 }
 
-.container
+.container {
+	background-color: #ececec;
+	border-radius: 15px;
+}
+
+p {margin: 0;} /*Removes margin from bootstrap / удаляет отступ от Bootstrap*/
+
+.row {
+	margin: 20px auto;
+}
 
 .article-name {
 	margin: 20px 0;
+}
+
+img {
+	width: 100%;
+	border-radius: 10px;
 }

@@ -128,7 +128,7 @@ header {
 
 /* Icons of services / Иконки сервиса */
 .stats {
-	background-color: #222222;
+	background-color: #181818;
 	font-family: "Manrope";
 	color: #c4c4c4;
 	padding: 20px;
@@ -184,7 +184,7 @@ header {
 	}
 	
 	tr {
-		width: 100%;
+		width: fit-content;
 		height: 60px;
 		border-top: 4px solid #ececec;
 		border-bottom: 4px solid #ececec;
@@ -278,11 +278,50 @@ header {
 
 /* Footer */
 footer {
-	font-size: 20px;
-	color: #464646;
+	color: #d4d4d4;
+
+	h5 {margin-top: 30px; margin-bottom: 30px;}
+
+	.contacts {
+		a {margin: 0 10px;}
+		
+		h5 {
+			text-decoration: underline;
+			font-family:"Jura";
+			font-weight: 500;
+		}
+
+		div {margin-top: 30px; margin-bottom: 30px;}
+	}
 
 	a, a:hover, a:active {color: inherit}
+
+	form {
+		input, textarea, button {
+			color: inherit;
+			border: none;
+			border-radius: 25px;
+			background-color: #2e2e2e;
+		}
+
+		input, textarea {
+			width: 250px;
+			height: 55px;
+			padding: 15px 20px;
+			margin: 10px 20px 10px 0;
+		}
+
+		button {
+			width: 150px;
+			height: 50px;
+			border: 2px solid #be1e2d;
+			color: inherit;
+			margin:  20px 0;
+		}
+	}
 }
+
+.copyright {margin-top: 10px; text-align: center;}
 
 /* Feedback form / Форма Обратной связи */
 /*.feedback {
