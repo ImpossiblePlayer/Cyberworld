@@ -280,36 +280,3 @@ footer form button {
   margin-top: 10px;
   text-align: center;
 }
-/* Feedback form / Форма Обратной связи */
-/*.feedback {
-	input {
-		height: 40px;
-		width: 150px;
-		padding-left: 10px;
-		background: #c4c4c4;
-		border-radius: 35px;
-		margin: 20px 10px;
-		border: none;
-	}
-
-	textarea {
-		min-height: 150px;
-		max-height: 400px;
-		width: 95%;
-		background: #c4c4c4;
-		border-radius: 10px;
-		padding: 10px 0 0 10px;
-		margin-top: 10px;
-		border: none;
-	}
-
-	button {
-		height: 50px;
-		width: 200px;
-		font: "Jura";
-		background-color: #00ffbf;
-		border-radius: 35px;
-		margin: 10px;
-		border: none;
-	}
-}*/
