@@ -29,7 +29,8 @@ ol {
   list-style-type: none;
   padding-left: 0;
 }
-/* Used for blocks to give them theese background colors/ Используется для блоков, чтобы задать им данные цвета фона */
+/* Used for blocks to give them this background color
+Используется для блоков, чтобы задать им данный цвет фона */
 .gray-bg {
   background-color: #201e1e;
 }
@@ -51,7 +52,10 @@ header a {
   background-color: #313131;
 }
 .index {
-  font: 600 30px "Jura";
+  font: 600 30px "Segoe UI";
+}
+.index span {
+  font-weight: 100;
 }
 .dropdown-menu li {
   /* Bootstrap class */
