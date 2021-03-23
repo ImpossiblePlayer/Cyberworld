@@ -69,10 +69,10 @@ header {
 
 	.dropdown-item { /* Bootstrap class */
 		color: #000000;
+		width: 220px;
 
 		&:hover,
-		&:active
-		{ 
+		&:active { 
 			background-color: #d3d3d3;
 			width: auto;
 		}
@@ -176,6 +176,7 @@ header {
 /* Price list / Прайслист */
 .price {
 	height: 600px;
+	padding-bottom: 40px;
 	background: url(../backgrounds/price-bg.jpg) no-repeat fixed;
 	background-size: cover;
 	font: 500 24px "Jura";
@@ -272,13 +273,6 @@ header {
 	}
 }
 
-/* Makes enough space for content on mobiles / Делает достаточно места на мобильных */
-@media (max-width: 720px) {
-	.info {
-		height: fit-content;
-	}
-}
-
 /* Footer */
 footer {
 	color: #d4d4d4;
@@ -311,7 +305,7 @@ footer {
 			width: 250px;
 			height: 55px;
 			padding: 15px 20px;
-			margin: 10px 20px 10px 0;
+			margin: 10px 20px 10px 10px;
 		}
 
 		button {
@@ -325,3 +319,11 @@ footer {
 }
 
 .copyright {margin-top: 10px; text-align: center;}
+
+/* Makes enough space for content on mobiles / Делает достаточно места на мобильных */
+@media (max-width: 720px) {
+	.price,
+	.info {
+		height: fit-content;
+	}
+}

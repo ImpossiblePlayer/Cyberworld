@@ -14,8 +14,7 @@
 				margin: 0; /* Removes Bootstrap's margin / Убирает марджин от Bootstrap */
 				font: bold 24px Verdana;
 				color: #000000;
-				height: 100vh; /* Body element's height = screen's height (for backgtound)
-								Высота элемента Body равна высоте экрана (для фона) */
+				height: 100vh; /* <body> height = screen height (for backgtound's noemal view) / Высота <body> равна высоте экрана (для нормального отображения фона) */
 				background: #f0f0f0 url('error.gif') no-repeat center;
 				background-size: contain;
 				text-align: center;
@@ -25,27 +24,28 @@
 				height: 500px;
 			}
 
+			a {padding: 10px;}
+
 			a,
 			a:hover,
 			a:active {
-				color: inherit;
 				border: 2px solid #be1e2d;
 				border-radius: 20px;
-				padding: 10px;
+				color: inherit;
 			}
 
 			.row:last-child {
-				margin-top: 350px;
+				margin-top: 370px;
 			}
 		</style>
 	</head>
 	<body class="d-flex align-items-center">
 		<div class="container">
 			<div class="message row justify-content-center align-items-end">
-				<p class="col-lg-4">Ой, кажется, эта страница еще не готова</p>
+				<p class="col-lg-8">Ой, кажется, эта страница еще не готова</p>
 			</div>
 			<div class="row justify-content-center">
-				<a class="col-4 col-lg-2" href="../index.html">На главную</a>
+				<a class="col-6 col-lg-2" href="../index.html">На главную</a>
 			</div>
 		</div>
 	</body>
