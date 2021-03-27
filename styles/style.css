@@ -171,6 +171,43 @@ header a {
   margin-left: 10px;
   font-weight: 1000;
 }
+.services {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  color: #c4c4c4;
+  background: url(../backgrounds/services.jpg) repeat-y bottom;
+}
+.services > div:first-child {
+  text-align: center;
+}
+.services .row {
+  margin-top: 40px;
+}
+.services .card {
+  padding-top: 30px;
+  height: 300px;
+  border-radius: 5px;
+  border: 2px solid #be1e2d;
+  background-color: #3838385e;
+}
+.services .card-body {
+  position: relative;
+}
+.services .btn {
+  position: absolute;
+  bottom: 40px;
+  border: 2px solid #be1e2d;
+  border-radius: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #c4c4c4;
+  width: fit-content;
+}
+.services .btn:hover,
+.services .btn:active {
+  background: #1f1f1f;
+  color: #c4c4c4;
+}
 /* News / Новости */
 .news {
   background-color: #f2f3f6;
@@ -179,10 +216,8 @@ header a {
 .news .row {
   padding: 20px;
 }
-.news > .row:first-child {
-  margin-bottom: 20px;
-}
 .news h1 {
+  margin-bottom: 20px;
   text-align: center;
 }
 .news img {
@@ -194,7 +229,7 @@ header a {
   border-radius: 20px;
   padding-left: 15px;
   padding-right: 15px;
-  color: #000;
+  color: #000000;
   width: fit-content;
 }
 .news .btn:hover,
@@ -237,9 +272,6 @@ footer h5 {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-footer .contacts a {
-  margin: 0 10px;
-}
 footer .contacts h5 {
   text-decoration: underline;
   font-family: "Jura";
@@ -248,6 +280,9 @@ footer .contacts h5 {
 footer .contacts div {
   margin-top: 30px;
   margin-bottom: 30px;
+}
+footer .contacts div:last-child {
+  margin-top: 100px;
 }
 footer a,
 footer a:hover,

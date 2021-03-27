@@ -1,14 +1,12 @@
-* {
-	/* outline: 2px solid #000000; */
-}
-
 body {
 	font: 16px;
 	color: #222222;
 }
 
 .container {
-	background-color: #ececec;
+	padding: 40px 0;
+	margin: 50px auto;
+	background-color: #f3f3f3;
 	border-radius: 10px;
 }
 
@@ -20,9 +18,14 @@ p {margin: 0;} /*Removes margin from bootstrap / удаляет отступ о�
 
 .article-name {
 	margin: 20px 0;
+	text-align: center;
 }
 
-img {
+figcaption {
+	font-size: 14px;
+}
+
+.container img {
 	width: 100%;
-	border-radius: 10px;
+	border-radius: 5px;
 }
