@@ -1,14 +1,15 @@
 <?php 
-	if(isset($_POST['submit'])){
-	    $to = "ivanpronin1379@gmail.com"; // This is Email address where email comes / Это адрес получателя
-	    $from = $_POST['email']; // This is the sender's Email address / Это адрес отправителя
-	    $name = $_POST['name'];
-	    $subject = "Form submission";
-	    $message = $name . " отправил:" . "\n\n" . $_POST['message'];
-	    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
+if(isset($_POST['submit'])){
+    $to = "ivanpronin@gmail.com"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+	$tel = $_POST['tel'];
+    $name = $_POST['first_name'];
+    $subject = "Form submission";
+    $message = $name . " (" . $tel . ") " . " написал:" . "\n\n" . $_POST['message'];
 
-	    $headers = "From: " . $from . ",\n" . $tel;
-	    mail($fro,$subject,$message,$headers); // Sends message on Email / Отправляет письмо на Email
-	    echo "Письмо отправлено. Спасибо,  " . $name . ", Вам скоро ответят.";
-	    }
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    }
 ?>
