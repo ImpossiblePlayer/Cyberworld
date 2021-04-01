@@ -4,12 +4,11 @@
 	    $from = $_POST['email']; // This is the sender's Email address / Это адрес отправителя
 	    $name = $_POST['name'];
 	    $subject = "Form submission";
-	    $subject2 = "Copy of your form submission";
 	    $message = $name . " отправил:" . "\n\n" . $_POST['message'];
 	    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
 
 	    $headers = "From: " . $from . ",\n" . $tel;
-	    mail($to,$subject,$message,$headers); // Sends message on Email / Отправляет письмо на Email
+	    mail($fro,$subject,$message,$headers); // Sends message on Email / Отправляет письмо на Email
 	    echo "Письмо отправлено. Спасибо,  " . $name . ", Вам скоро ответят.";
 	    }
 ?>
