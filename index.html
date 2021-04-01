@@ -345,17 +345,16 @@
 				</div>
 				<div class="col-lg-5">
 					<h5>Обратная связь</h5>
-					<form>
-						<div class="col-lg-9 row">
-							<input class="col" name="initials" type="text" placeholder="Имя">
+					<form action="scripts/mailsend.php" method="POST">
+						<div class="row justify-content-between">
+							<input class="col" name="name" type="text" placeholder="Имя">
 							<input class="col" name="email" type="email" placeholder="Email">
-							
-						</div>
-						<div class="col-lg-9 row">
 							<input class="col" name="tel" type="tel" placeholder="+7 (___) ___-__-__">
-							<textarea class="col" name="message" placeholder="Сообщение"></textarea>
 						</div>
-						<button type="submit">Отправить</button>
+						<div class="row">
+							<textarea class="col-7" name="message" placeholder="Сообщение" rows="5"></textarea>
+						</div>
+						<button type="submit" name="submit">Отправить</button>
 					</form>
 				</div>
 			</div>
