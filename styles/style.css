@@ -292,15 +292,12 @@ footer a:active {
 footer form input,
 footer form textarea,
 footer form button {
+  width: 250px;
+  height: 55px;
   color: inherit;
   border: none;
   border-radius: 25px;
   background-color: #2e2e2e;
-}
-footer form input,
-footer form textarea {
-  width: 250px;
-  height: 55px;
   padding: 15px 20px;
   margin: 10px;
 }
@@ -323,5 +320,8 @@ footer form button {
   .price,
   .info {
     height: fit-content;
+  }
+  .services div[class|="col"] {
+    margin-bottom: 40px;
   }
 }
