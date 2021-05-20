@@ -14,7 +14,8 @@ a,
 a:visited
 {
 	text-decoration: none;
-	color: #c4c4c4
+	color: #c4c4c4;
+	transition: 0.5s;
 }
 
 a:hover {
@@ -62,8 +63,8 @@ header {
 	span {font-weight: 100;}
 }
 
-.dropdown-menu {
-	li { /* Bootstrap class */
+.dropdown-menu { /* Bootstrap class */
+	li {
 		border-radius: 15px;
 	}
 
@@ -224,6 +225,11 @@ header {
 		border-radius: 5px;
 		border: 2px solid #be1e2d;
 		background-color: #3838385e;
+		transition: 0.4s;
+
+		&:hover {
+			transform: translateY(-15px);
+		}
 	}
 
 	.card-body {
@@ -252,6 +258,15 @@ header {
 .news {
 	background-color: #f2f3f6;
 	font-family: "Manrope";
+
+	.card {
+		transition: 0.4s;
+
+		&:hover {
+			transform: translateY(-15px);
+			box-shadow: 0px 0 25px 0 #00000080;
+		}
+	}
 
 	.row {
 		padding: 20px;
@@ -358,6 +373,7 @@ footer {
 			border: 2px solid #be1e2d;
 			color: inherit;
 			margin: 20px 0;
+			padding: 0;
 		}
 	}
 }
